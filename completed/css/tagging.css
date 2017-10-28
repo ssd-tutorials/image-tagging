@@ -1,0 +1,100 @@
+#image,.tools,.hover,#tags {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+}
+#image_container {
+	width:100%;
+	text-align: center;
+	margin-bottom:13px;
+}
+#image {
+	position:relative;
+	padding:10px;	
+	background:#fff;	
+	cursor: crosshair;
+	margin: 0 auto;
+}
+#image img {
+	z-index:1;
+}
+#tags {
+  background:#444;
+  width:600px;
+  padding:10px;
+  min-height:20px;  
+  text-align: left;
+}
+#tags span,#tags a,.label {
+	color:#fff;
+}
+.tools,.outline {
+	position:absolute;
+	z-index:3;
+}
+.tools {	
+	background:#982560;
+	text-align:center;
+	width:140px;
+	padding:5px 5px 15px 5px;		
+}
+.outline,.link {
+	border:solid 3px #fff;
+}
+.outline,.tag-outline {
+	width:100px;
+	height:100px;
+	/* workaround for the IE browsers */
+	background:url(/images/transparent.png) no-repeat -20px 0;
+}
+.outline {	
+	cursor:pointer;
+}
+.tag-outline,.tag-tooltip {		
+	overflow: hidden;
+	position:absolute;
+}
+.tag-outline {			
+	z-index:2;
+	text-indent:-999999em;
+}
+.tag-tooltip {
+	border:none;
+	padding:4px 20px;
+	white-space:nowrap;
+	text-indent: 0;
+	/* using visibility rather than text-indent or display because jquery.width() 
+	cannot be read from hidden or text indented element */
+	visibility: hidden;
+	color: #fff;
+}
+.hover {	
+	visibility: visible;
+	background:url(/images/transparent.png) repeat 0 0;
+}
+.field {	
+	padding:4px;	
+	border: solid 1px #aaa;	
+}
+.field {
+	width:125px;
+	margin:0 auto;
+	margin-bottom:4px;
+}
+.button {
+	padding:3px 15px;
+	color:#fff;
+	text-decoration:none;
+	cursor: pointer;
+}
+.mr_r4 {
+	margin-right:4px;
+}
+.button_green {
+	background:url(/images/button.png) repeat-x 0 0;
+	border: solid 1px #476605;
+}
+.button_red {
+	background:url(/images/button.png) repeat-x 0 -30px;
+	border: solid 1px #A0530B;
+}
